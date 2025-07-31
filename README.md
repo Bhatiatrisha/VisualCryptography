@@ -94,29 +94,28 @@ Create and show the overlay result
 Technical Details
 Implementation Logic
 ## Image Processing:
-
-Convert input to binary (black/white) format
-Scale image if needed
-Process image in memory-efficient chunks
+- Convert input to binary (black/white) format
+- Scale image if needed
+- Process image in memory-efficient chunks
 ## Share Generation:
 
-Each pixel is expanded to 2×2 sub-pixels
-Random pattern selection for white pixels
-Complementary patterns for black pixels
-Shares are stored as separate images
+- Each pixel is expanded to 2×2 sub-pixels
+- Random pattern selection for white pixels
+- Complementary patterns for black pixels
+- Shares are stored as separate images
 ## Overlay Process:
 
-Bitwise AND operation between shares
-Processed in chunks for memory efficiency
-Results in visible secret image
+- Bitwise AND operation between shares
+- Processed in chunks for memory efficiency
+- Results in visible secret image
 ## Memory Management
-Automatic image scaling for large inputs
-Chunk-based processing for memory efficiency
-Proper cleanup of OpenCV resources
+- Automatic image scaling for large inputs
+- Chunk-based processing for memory efficiency
+- Proper cleanup of OpenCV resources
 ## Limitations
-Works with binary (black and white) images only
-Output images are 2x larger than input
-Some loss of resolution due to pixel expansion
+- Works with binary (black and white) images only
+- Output images are 2x larger than input
+- Some loss of resolution due to pixel expansion
 
 ## Contributing
 Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
@@ -125,5 +124,5 @@ Feel free to fork this repository and submit pull requests. For major changes, p
 MIT License
 
 ## Acknowledgments
-OpenCV team for the computer vision library
-Visual Cryptography concept by Moni Naor and Adi Shamir (1994)
+- OpenCV team for the computer vision library
+- Visual Cryptography concept by Moni Naor and Adi Shamir (1994)
